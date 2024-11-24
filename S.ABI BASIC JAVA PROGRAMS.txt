@@ -1,0 +1,140 @@
+
+JAVA PROGRAM TO CHECK A NUMBER IS POSITIVE OR NEGATIVE
+
+
+public class Main  {
+
+    public static void main(String[] args) {
+
+        double number = 12.3;
+        
+        if (number < 0.0)
+            System.out.println(number + " is a negative number.");
+
+        else if ( number > 0.0)
+            System.out.println(number + " is a positive number.");
+
+        
+        
+        else
+            System.out.println(number + " is 0.");
+    }
+}
+
+JAVA PROGRAM TO CHECK WHETHER LEAP YWAR OR NOT
+
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args){
+      int year;
+      System.out.println("Enter an Year :: ");
+      Scanner sc = new Scanner(System.in);
+      year = sc.nextInt();
+
+      if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
+         System.out.println("Specified year is a leap year");
+      else
+         System.out.println("Specified year is not a leap year");
+   }
+}
+ JAVA PROGRAM TO CHECK MAXIMUM OF TWO NUMBERS
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter the Number1 : ");
+		int num1 = input.nextInt();
+		System.out.print("Enter the Number2 : ");
+		int num2 = input.nextInt();
+		if(num1>num2)
+			System.out.println("Maximum Number is " +num1);
+		else if(num1<num2)
+			System.out.println("Maximum Number is " +num2);
+		else
+			System.out.println("Both are Equal " +num1);
+	}
+}
+
+JAVA PROGRAM TO CREATE A CALCULATOR USING SWITCH CASE
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    char operator;
+    Double number1, number2, result;
+
+    
+    Scanner input = new Scanner(System.in);
+
+    
+    System.out.println("Choose an operator: +, -, *, or /");
+    operator = input.next().charAt(0);
+
+    
+    System.out.println("Enter first number");
+    number1 = input.nextDouble();
+
+    System.out.println("Enter second number");
+    number2 = input.nextDouble();
+
+    switch (operator) {
+
+      
+      case '+':
+        result = number1 + number2;
+        System.out.println(number1 + " + " + number2 + " = " + result);
+        break;
+
+      
+      case '-':
+        result = number1 - number2;
+        System.out.println(number1 + " - " + number2 + " = " + result);
+        break;
+
+     
+      case '*':
+        result = number1 * number2;
+        System.out.println(number1 + " * " + number2 + " = " + result);
+        break;
+
+
+      case '/':
+        result = number1 / number2;
+        System.out.println(number1 + " / " + number2 + " = " + result);
+        break;
+
+      default:
+        System.out.println("Invalid operator!");
+        break;
+    }
+
+    input.close();
+  }
+}
+
+JAVA PROGRAM TO CHECK A NUMBER IS ODD OR EVEN
+
+
+import java.util.Scanner;
+
+public class EvenOdd {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = reader.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println(num + " is even");
+        else
+            System.out.println(num + " is odd");
+    }
+}
